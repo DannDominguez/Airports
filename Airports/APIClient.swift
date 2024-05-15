@@ -10,31 +10,34 @@ import Foundation
 
 class APIClient {
     
-    
-    func getData (completion: @escaping (Result<Data, Error>) -> Void) {
-       
+    func getAirportsData (completion: @escaping (Result<[AirportsData], Error>) -> Void) {
         let headers = [
-            "X-RapidAPI-Key": "d7b4708509msh6675f58eb66caadp182309jsn2e6e7156ee4e",
-            "X-RapidAPI-Host": "airports-finder1.p.rapidapi.com"
+            "X-RapidAPI-Key": "c2bcfa61f1mshf2abcf111b8af04p11138ejsnd5ae171d439b",
+            "X-RapidAPI-Host": "radarflight.p.rapidapi.com"
         ]
         
-        let request = NSMutableURLRequest(url: NSURL(string: "https://airports-finder1.p.rapidapi.com/airports/coordinates/32.9222/-97.0409")! as URL,
-                                          cachePolicy: .useProtocolCachePolicy,
-                                          timeoutInterval: 10.0)
+        var request = URLRequest(url: URL(string: "https://radarflight.p.rapidapi.com/api/v1/airport/BE/availables")!,timeoutInterval: Double.infinity)
+        
         request.httpMethod = "GET"
         request.allHTTPHeaderFields = headers
         
-        let session = URLSession.shared
-        let dataTask = session.dataTask(with: request as URLRequest, completionHandler: { (data, response, error) -> Void in
-            if (error != nil) {
-                print(error as Any)
-            } else {
-                let httpResponse = response as? HTTPURLResponse
-                print(httpResponse)
+        URLSession.shared.dataTask(with: request) { data, response, error in
+            guard let data = data else {
+                if let error = error {
+                    print("Error: \(error)")
+                } else {
+                }
+            return
+        }
+        print(String(data: data, encoding: .utf8)!)
+        
+            do {
+                let result = try JSONDecoder().decode([AirportsData].self, from: data)
+                completion(.success(result))
+            } catch {
+                    print("Error decoding JSON:\(error)")
+                    completion(.failure(error))
             }
-        }).resume()
-        
-        
+        }.resume()
     }
 }
-

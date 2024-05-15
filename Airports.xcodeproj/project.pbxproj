@@ -7,26 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		B14B94172BF436E000A45469 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B94162BF436E000A45469 /* MapView.swift */; };
+		B14B94192BF436EF00A45469 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B94182BF436EE00A45469 /* ListView.swift */; };
 		B1C7CFC52BF2E588004BC180 /* AirportsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFC42BF2E588004BC180 /* AirportsApp.swift */; };
 		B1C7CFC72BF2E588004BC180 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFC62BF2E588004BC180 /* ContentView.swift */; };
 		B1C7CFC92BF2E58A004BC180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C7CFC82BF2E58A004BC180 /* Assets.xcassets */; };
 		B1C7CFCC2BF2E58A004BC180 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C7CFCB2BF2E58A004BC180 /* Preview Assets.xcassets */; };
-		B1C7CFD42BF2E668004BC180 /* RadiusViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFD32BF2E668004BC180 /* RadiusViewModel.swift */; };
+		B1C7CFD42BF2E668004BC180 /* AirportsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFD32BF2E668004BC180 /* AirportsViewModel.swift */; };
 		B1C7CFD62BF2E6B6004BC180 /* APIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFD52BF2E6B6004BC180 /* APIClient.swift */; };
 		B1C7CFD82BF2E85D004BC180 /* Model.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFD72BF2E85D004BC180 /* Model.swift */; };
-		B1C7CFDA2BF2EA94004BC180 /* RadiusView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFD92BF2EA94004BC180 /* RadiusView.swift */; };
+		B1C7CFDA2BF2EA94004BC180 /* SearchBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFD92BF2EA94004BC180 /* SearchBarView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		B14B94162BF436E000A45469 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B14B94182BF436EE00A45469 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
 		B1C7CFC12BF2E588004BC180 /* Airports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C7CFC42BF2E588004BC180 /* AirportsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsApp.swift; sourceTree = "<group>"; };
 		B1C7CFC62BF2E588004BC180 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		B1C7CFC82BF2E58A004BC180 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B1C7CFCB2BF2E58A004BC180 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
-		B1C7CFD32BF2E668004BC180 /* RadiusViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusViewModel.swift; sourceTree = "<group>"; };
+		B1C7CFD32BF2E668004BC180 /* AirportsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsViewModel.swift; sourceTree = "<group>"; };
 		B1C7CFD52BF2E6B6004BC180 /* APIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIClient.swift; sourceTree = "<group>"; };
 		B1C7CFD72BF2E85D004BC180 /* Model.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Model.swift; sourceTree = "<group>"; };
-		B1C7CFD92BF2EA94004BC180 /* RadiusView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RadiusView.swift; sourceTree = "<group>"; };
+		B1C7CFD92BF2EA94004BC180 /* SearchBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchBarView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,8 +85,10 @@
 		B1C7CFD22BF2E625004BC180 /* Modules */ = {
 			isa = PBXGroup;
 			children = (
-				B1C7CFD32BF2E668004BC180 /* RadiusViewModel.swift */,
-				B1C7CFD92BF2EA94004BC180 /* RadiusView.swift */,
+				B1C7CFD32BF2E668004BC180 /* AirportsViewModel.swift */,
+				B1C7CFD92BF2EA94004BC180 /* SearchBarView.swift */,
+				B14B94162BF436E000A45469 /* MapView.swift */,
+				B14B94182BF436EE00A45469 /* ListView.swift */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -157,11 +163,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B14B94192BF436EF00A45469 /* ListView.swift in Sources */,
+				B14B94172BF436E000A45469 /* MapView.swift in Sources */,
 				B1C7CFD82BF2E85D004BC180 /* Model.swift in Sources */,
-				B1C7CFD42BF2E668004BC180 /* RadiusViewModel.swift in Sources */,
+				B1C7CFD42BF2E668004BC180 /* AirportsViewModel.swift in Sources */,
 				B1C7CFC72BF2E588004BC180 /* ContentView.swift in Sources */,
 				B1C7CFC52BF2E588004BC180 /* AirportsApp.swift in Sources */,
-				B1C7CFDA2BF2EA94004BC180 /* RadiusView.swift in Sources */,
+				B1C7CFDA2BF2EA94004BC180 /* SearchBarView.swift in Sources */,
 				B1C7CFD62BF2E6B6004BC180 /* APIClient.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
