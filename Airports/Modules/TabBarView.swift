@@ -33,7 +33,7 @@ struct tabBarMap: View {
     @State var SearchText = ""
     
     var body: some View {
-        MapViewControllerBridge()
+        MapViewControllerBridge(viewModel: airportsViewModel)
             .onAppear {
                 airportsViewModel.getAirports(Country: SearchText)
             }

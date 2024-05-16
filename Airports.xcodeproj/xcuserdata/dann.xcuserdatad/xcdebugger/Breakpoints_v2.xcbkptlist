@@ -7,68 +7,6 @@
       <BreakpointProxy
          BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
          <BreakpointContent
-            uuid = "4EF2599F-702B-4224-B556-5FDCC3A58EFD"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Airports/Modules/AirportsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "21"
-            endingLineNumber = "21"
-            landmarkName = "getAirports(Country:)"
-            landmarkType = "7">
-            <Locations>
-               <Location
-                  uuid = "4EF2599F-702B-4224-B556-5FDCC3A58EFD - cc32e3241d895d80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;Airports.AirportsData&gt;, Swift.Error&gt;) -&gt; () in Airports.AirportsViewModel.getAirports(Country: Swift.String) -&gt; ()"
-                  moduleName = "Airports"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dann/Desktop/Airports/Airports/Modules/AirportsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22">
-               </Location>
-               <Location
-                  uuid = "4EF2599F-702B-4224-B556-5FDCC3A58EFD - cc32e3241d895d80"
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "closure #1 @Swift.MainActor () -&gt; () in closure #1 (Swift.Result&lt;Swift.Array&lt;Airports.AirportsData&gt;, Swift.Error&gt;) -&gt; () in Airports.AirportsViewModel.getAirports(Country: Swift.String) -&gt; ()"
-                  moduleName = "Airports"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/dann/Desktop/Airports/Airports/Modules/AirportsViewModel.swift"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "22"
-                  endingLineNumber = "22">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            uuid = "066ABDFA-3B4F-41D9-A1DA-D21AD0585ADB"
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
-            filePath = "Airports/Modules/AirportsViewModel.swift"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "18"
-            endingLineNumber = "18"
-            landmarkName = "getAirports(Country:)"
-            landmarkType = "7">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
             uuid = "4D4D7C01-A044-408D-9356-FC84E756AEAC"
             shouldBeEnabled = "Yes"
             ignoreCount = "0"

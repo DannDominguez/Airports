@@ -5,14 +5,7 @@
 //  Created by Daniela Ciciliano on 13/05/24.
 //
 import CoreLocation
-// This file was generated from JSON Schema using quicktype, do not modify it directly.
-// To parse the JSON, add this file to your project and do:
-//
-//   let airports = try? JSONDecoder().decode(Airports.self, from: jsonData)
-
 import Foundation
-
-
 
 // MARK: - Airport
 struct AirportsData: Codable, Hashable {
@@ -37,6 +30,7 @@ struct AirportsData: Codable, Hashable {
     let code: String?
     let scheduledService: ScheduledService
     let gpsCode: String?
+    
 
     enum CodingKeys: String, CodingKey {
         case longitudeDeg = "longitude_deg"

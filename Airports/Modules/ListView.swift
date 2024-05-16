@@ -12,21 +12,15 @@ struct ListView: View {
     var SearchText = ""
     
     var body: some View {
-//        NavigationView {
-//            VStack {
-//                if let airportsItem = viewModel.AirportsVM {
-                    List {
-                        ForEach(viewModel.AirportsVM ?? [], id: \.id) { item in
-                            Text(item.name)
-                        }
-                    }.onAppear {
-                        viewModel.getAirports(Country: SearchText)
-//                }
-//            }
-            
-        }
+        List {
+            ForEach(viewModel.AirportsVM ?? [], id: \.id) { item in
+                Text(item.name)
             }
+        }.onAppear {
+            viewModel.getAirports(Country: SearchText)
+        }
     }
+}
 
 
 #Preview {
