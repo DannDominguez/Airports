@@ -8,10 +8,26 @@
 import SwiftUI
 
 struct ListView: View {
+    @ObservedObject var viewModel = AirportsViewModel()
+    var SearchText = ""
+    
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+//        NavigationView {
+//            VStack {
+//                if let airportsItem = viewModel.AirportsVM {
+                    List {
+                        ForEach(viewModel.AirportsVM ?? [], id: \.id) { item in
+                            Text(item.name)
+                        }
+                    }.onAppear {
+                        viewModel.getAirports(Country: SearchText)
+//                }
+//            }
+            
+        }
+            }
     }
-}
+
 
 #Preview {
     ListView()

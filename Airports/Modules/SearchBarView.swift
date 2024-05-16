@@ -24,7 +24,7 @@ struct SearchBarView: View {
                     .textFieldStyle(RoundedBorderTextFieldStyle())
                     .padding(.horizontal,15)
                 
-                NavigationLink(destination: tabBar()) {
+                NavigationLink(destination: tabBar(query: text)) {
                     Text("Search")
                 }
                 

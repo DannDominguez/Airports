@@ -7,8 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		B14B94172BF436E000A45469 /* MapView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B94162BF436E000A45469 /* MapView.swift */; };
+		B14B94172BF436E000A45469 /* TabBarView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B94162BF436E000A45469 /* TabBarView.swift */; };
 		B14B94192BF436EF00A45469 /* ListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B94182BF436EE00A45469 /* ListView.swift */; };
+		B14B941B2BF5632800A45469 /* MapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B14B941A2BF5632800A45469 /* MapViewController.swift */; };
 		B1C7CFC52BF2E588004BC180 /* AirportsApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFC42BF2E588004BC180 /* AirportsApp.swift */; };
 		B1C7CFC72BF2E588004BC180 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B1C7CFC62BF2E588004BC180 /* ContentView.swift */; };
 		B1C7CFC92BF2E58A004BC180 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B1C7CFC82BF2E58A004BC180 /* Assets.xcassets */; };
@@ -20,8 +21,9 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B14B94162BF436E000A45469 /* MapView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapView.swift; sourceTree = "<group>"; };
+		B14B94162BF436E000A45469 /* TabBarView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarView.swift; sourceTree = "<group>"; };
 		B14B94182BF436EE00A45469 /* ListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ListView.swift; sourceTree = "<group>"; };
+		B14B941A2BF5632800A45469 /* MapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapViewController.swift; sourceTree = "<group>"; };
 		B1C7CFC12BF2E588004BC180 /* Airports.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Airports.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B1C7CFC42BF2E588004BC180 /* AirportsApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportsApp.swift; sourceTree = "<group>"; };
 		B1C7CFC62BF2E588004BC180 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -87,7 +89,8 @@
 			children = (
 				B1C7CFD32BF2E668004BC180 /* AirportsViewModel.swift */,
 				B1C7CFD92BF2EA94004BC180 /* SearchBarView.swift */,
-				B14B94162BF436E000A45469 /* MapView.swift */,
+				B14B94162BF436E000A45469 /* TabBarView.swift */,
+				B14B941A2BF5632800A45469 /* MapViewController.swift */,
 				B14B94182BF436EE00A45469 /* ListView.swift */,
 			);
 			path = Modules;
@@ -164,9 +167,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				B14B94192BF436EF00A45469 /* ListView.swift in Sources */,
-				B14B94172BF436E000A45469 /* MapView.swift in Sources */,
+				B14B94172BF436E000A45469 /* TabBarView.swift in Sources */,
 				B1C7CFD82BF2E85D004BC180 /* Model.swift in Sources */,
 				B1C7CFD42BF2E668004BC180 /* AirportsViewModel.swift in Sources */,
+				B14B941B2BF5632800A45469 /* MapViewController.swift in Sources */,
 				B1C7CFC72BF2E588004BC180 /* ContentView.swift in Sources */,
 				B1C7CFC52BF2E588004BC180 /* AirportsApp.swift in Sources */,
 				B1C7CFDA2BF2EA94004BC180 /* SearchBarView.swift in Sources */,

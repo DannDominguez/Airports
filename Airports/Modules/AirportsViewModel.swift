@@ -9,18 +9,15 @@ import Foundation
 
 
 class AirportsViewModel: ObservableObject {
-    
-    
     @Published var AirportsVM: [AirportsData]?
     @Published var error: Error?
-  
+    
     
     private let apiClient = APIClient()
     
-    func getAirports(query: String) {
-        apiClient.getAirportsData() { result in
+    func getAirports(Country: String) {
+        apiClient.getAirportsData(Country: Country) { result in
             DispatchQueue.main.async {
-                
                 switch result {
                 case .success(let airports):
                     self.AirportsVM = airports
@@ -30,14 +27,12 @@ class AirportsViewModel: ObservableObject {
                 }
             }
         }
-      
+        
     }
-    
-    
-    }
-    
-    
-    
-    
+}
+
+
+
+
 
 

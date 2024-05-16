@@ -12,24 +12,31 @@ import CoreLocation
 
 import Foundation
 
+
+
 // MARK: - Airport
-struct AirportsData: Codable {
-    let longitudeDeg: String?
+struct AirportsData: Codable, Hashable {
+    let longitudeDeg: String
     let otherName: String?
     let iataCode, elevationFt: String?
-    let isAvailable: Bool?
-    let localCode: Int?
+    let isAvailable: Bool
+    let localCode: String?
     let id: Int
-    let continent: String
+    let continent: Continent
     let countryID: Int
     let ident: String
-    let homeLink: String
-    let isoCountry, typeA: String
-    let wikipediaLink: String
-    let isoRegion, name, keywords, municipality: String
+    let homeLink: String?
+    let isoCountry: ISOCountry
+    let typeA: TypeA
+    let wikipediaLink: String?
+    let isoRegion: ISORegion
+    let name: String
+    let keywords: String?
+    let municipality: String?
     let latitudeDege: String
-    let code: Int?
-    let scheduledService, gpsCode: String
+    let code: String?
+    let scheduledService: ScheduledService
+    let gpsCode: String?
 
     enum CodingKeys: String, CodingKey {
         case longitudeDeg = "longitude_deg"
@@ -52,6 +59,43 @@ struct AirportsData: Codable {
         case scheduledService = "scheduled_service"
         case gpsCode = "gps_code"
     }
+}
+
+enum Continent: String, Codable {
+    case eu = "EU"
+}
+
+enum ISOCountry: String, Codable {
+    case be = "BE"
+}
+
+enum ISORegion: String, Codable {
+    case beBru = "BE-BRU"
+    case beVan = "BE-VAN"
+    case beVbr = "BE-VBR"
+    case beVli = "BE-VLI"
+    case beVov = "BE-VOV"
+    case beVwv = "BE-VWV"
+    case beWbr = "BE-WBR"
+    case beWht = "BE-WHT"
+    case beWlg = "BE-WLG"
+    case beWlx = "BE-WLX"
+    case beWna = "BE-WNA"
+}
+
+enum ScheduledService: String, Codable {
+    case no = "no"
+    case yes = "yes"
+}
+
+enum TypeA: String, Codable {
+    case balloonport = "balloonport"
+    case closed = "closed"
+    case heliport = "heliport"
+    case largeAirport = "large_airport"
+    case mediumAirport = "medium_airport"
+    case seaplaneBase = "seaplane_base"
+    case smallAirport = "small_airport"
 }
 
 typealias Airports = [AirportsData]
