@@ -24,7 +24,7 @@ struct tabBar: View {
                     Image(systemName: "list.bullet")
                     Text("List")
                 }
-        }
+        } .background(Color.white)
     }
 }
 
@@ -51,5 +51,5 @@ struct tabBarList: View {
 
 
 //#Preview {
-//    MapViewControllerBridge()
+//    MapViewControllerBridge(viewModel: airportsViewModel)
 //}

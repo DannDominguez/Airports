@@ -33,7 +33,6 @@ class MapViewController: UIViewController, MKMapViewDelegate {
         //        mapView.removeAnnotations(mapView.annotations)
         for airport in airports {
             guard let latitude = Double(airport.latitudeDege), let longitude = Double(airport.longitudeDeg) else {
-                print("Error al convertir coordenadas de aeropuerto a Double.")
                 continue
             }
             let annotation = MKPointAnnotation()
